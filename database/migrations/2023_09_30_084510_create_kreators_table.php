@@ -15,6 +15,7 @@ return new class extends Migration
 
             $table->id();  // Creates an auto-incrementing primary key column named "id"
             $table->string('kreatorID')->unique();  // Unique identifier for kreators
+            $table->string('kreatorName');  // Name of kreator  (e.g. "John Doe")
             $table->unsignedBigInteger('UserID');  // Foreign key column
             $table->timestamps();  // Adds "created_at" and "updated_at" columns
 

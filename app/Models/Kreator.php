@@ -8,7 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Kreator extends Model
 {
     use HasFactory;
+
     protected $fillable = [
-        'name'
+        'kreatorName',
+    ];
+
+    protected $hidden = [
+        'UserID',
+        'kreatorID'
     ];
 }
